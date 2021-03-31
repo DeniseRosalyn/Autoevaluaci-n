@@ -1,0 +1,9 @@
+Integrantes:
+-Camila Villafani
+-Nayra Limaymanta
+-Kevin Cuadros
+-Lucia Quillatupa
+
+=======
+Modificando en la rama1 
+>>>>>>> rama1
