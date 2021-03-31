@@ -1,0 +1,3 @@
+Practica de LP2
+Me llamo Pepito
+Nuestro grupo se llama Aprendiendo Git con Uribe, Pepito, Adri y Jenny
