@@ -1,0 +1,19 @@
+A =Hello 
+B =Hi , what is your name ?
+A = my name is ana  , and you  ?
+B = my name is Bruna  , nice too meet you  ana 
+B = nice too meet you too 
+
+# 
+
+A = What is your favorite color  ?
+B = my favorite color is pink  , and you ?
+A = my favorite colors are blue and green 
+A = a very rare mix 
+
+#
+
+A = Hi, where do you live ?
+B = i live in ravelo in italy , you are also from here in Italy?
+A = no, I'm from peru, from chiclayo
+B = or beautiful city, beautiful country
