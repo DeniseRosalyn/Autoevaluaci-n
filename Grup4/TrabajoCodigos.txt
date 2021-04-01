@@ -1,0 +1,43 @@
+#Supuestos de normalidad
+import scipy.stats as stats
+pvalue = stats.shapiro(model.resid)
+print(pvalue)
+
+
+### conclusión:
+p-value=0.9341>0.01, No se rechaza Ho. Los errores tienen una distribucion normal
+
+
+#Supuestos de homogeneidad
+from scipy.stats import bartlett
+
+Ag1=[70.4,68.5,69,70.3,71.2]
+Ag2=[73.5,74.5,73.1,72,71.5]
+Ag3=[55,55.5,56.3,58.5,60.5]
+Ag4=[58.2,58.5,59,59.3,60.5]
+
+stat, p = bartlett(Ag1, Ag2, Ag3, Ag4)
+p
+
+
+
+# Creando el modelo para el Diseño en Bloques
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+
+#Modelo de mínimos cuadrados ordinarios(OLS)
+model = ols('resistencia ~ C(agente)+C(rollo)', data=DF).fit()
+anova_table = sm.stats.anova_lm(model, typ=1)
+anova_table
+
+
+
+
+#Prueba Tukey
+import matplotlib.pyplot as plt
+import statsmodels.formula.api as smf
+import statsmodels.stats.multicomp as multi 
+
+mcDate = multi.MultiComparison(DF['resistencia'], DF['agente'])
+Results = mcDate.tukeyhsd()
+print(Results)
